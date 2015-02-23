@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Chrome Shred Options</title>
+    <style>
+      body: {
+        padding: 10px;
+      }
+      .option {
+        
+      }
+      label, input: {
+        display: inline-block;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="options">
+      <div class="option">
+        <label for="time-period">Obliterate the following items from:</label>
+        <select id="time-period">
+          <option value="0">the past hour</option>
+          <option value="1">the past day</option>
+          <option value="2">the past week</option>
+          <option value="3">the last 4 weeks</option>
+          <option value="4">the beginning of time</option>
+        </select>
+      </div>
+      <div class="option">
+        <input id="browsing-history" type="checkbox" />
+        <label for="browsing-history">Browsing history</label>
+      </div>
+      <div class="option">
+        <input id="download-history" type="checkbox" />
+        <label for="download-history">Download history</label>
+      </div>
+      <div class="option">
+        <input id="cookies" type="checkbox" />
+        <label for="cookies">Cookies and other site and plug-in data</label>
+      </div>
+      <div class="option">
+        <input id="cache" type="checkbox" />
+        <label for="cache">Cahced images and files</label>
+      </div>
+      <div class="option">
+        <input id="passwords" type="checkbox" />
+        <label for="passwords">Passwords</label>
+      </div>
+      <div class="option">  
+        <input id="form-data" type="checkbox" />
+        <label for="form-data">Autofull form data</label>
+      </div>
+      <div class="option">
+        <input id="hosted-apps-data" type="checkbox" />
+        <label for="hosted-apps-data">Hosted app data</label>
+      </div>
+      <button id="save">Save</button>
+      <div id="message"></div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

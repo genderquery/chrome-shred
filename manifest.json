@@ -10,7 +10,10 @@
     "128": "images/icon-128.png"
   },
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "icon-animator.js", 
+      "background.js"
+    ],
     "persistent": false
   },
   "browser_action": {
@@ -20,8 +23,13 @@
     },
     "default_title": "Shred"
   },
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
   "permissions": [ 
     "browsingData",
-    "notifications"
+    "storage"
   ]
 }
